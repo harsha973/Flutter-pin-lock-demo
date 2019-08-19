@@ -120,6 +120,16 @@ class _BackgroundObserverPageState extends State<BackgroundObserverPage> with Wi
 
 class PINScreen extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => Text('Dummy PIN screen');
+  Widget build(BuildContext context) {
+    return Material(
+        child: Scaffold(
+          appBar: AppBar(title: Text('PIN screen')),
+            body: Align(
+              alignment: Alignment.center,
+              child: Text('Dummy PIN screen')
+            )
+        )
+    );
+  }
 
 }
